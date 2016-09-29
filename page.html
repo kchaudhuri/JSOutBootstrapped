@@ -9,8 +9,10 @@
     <script lang="javascript">
       function sayHello() {
         document.getElementById("hello").innerHTML = "Hiya, buddy!";
+        document.getElementById("goodbye").innerHTML = " ";
       }
       function sayGoodbye(){
+        document.getElementById("hello").innerHTML = " ";
         document.getElementById("goodbye").innerHTML = "See ya!";
       }
     </script>
@@ -20,7 +22,7 @@
       <button type="button" class="btn btn-default" onclick="sayHello();">
         Sign in
       </button>
-      <button type="button" class="btn btn-default">
+      <button type="button" class="btn btn-default" onclick=" sayGoodbye();">
         Sign out
       </button>
       <div class="alert alert-success" role="alert" id="hello">
